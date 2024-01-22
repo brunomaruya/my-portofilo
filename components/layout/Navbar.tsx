@@ -1,5 +1,9 @@
 import React from "react";
-
+import { CircularProgress } from "@nextui-org/react";
 export default function Navbar() {
-  return <div>Navbar</div>;
+  return (
+    <div>
+      <CircularProgress />
+    </div>
+  );
 }
