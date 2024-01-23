@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <MainProvider>
           <NavbarComp />
-          <main className="">{children}</main>
+          <main className="margin">{children}</main>
         </MainProvider>
       </body>
     </html>
