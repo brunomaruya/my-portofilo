@@ -32,7 +32,8 @@ export default function NavbarComp() {
       <NavbarContent>
         <NavbarBrand>Bm.</NavbarBrand>
       </NavbarContent>
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+
+      <NavbarContent className="hidden sm:flex gap-4" justify="end">
         <NavbarItem>
           <Link color="foreground" href="#">
             Features
@@ -50,12 +51,10 @@ export default function NavbarComp() {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarContent justify="end">
-        <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden"
-        />
-      </NavbarContent>
+      <NavbarMenuToggle
+        aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+        className="sm:hidden"
+      />
 
       <NavbarMenu>
         {menuItems.map((item, index) => (
