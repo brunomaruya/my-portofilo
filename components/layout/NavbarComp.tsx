@@ -22,7 +22,7 @@ export default function NavbarComp() {
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-background">
+    <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-transparent">
       <NavbarContent>
         <NavbarBrand className="text-primary text-3xl font-bold">
           Bm.
