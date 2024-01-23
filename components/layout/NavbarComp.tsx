@@ -15,16 +15,10 @@ export default function NavbarComp() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
-    "Profile",
-    "Dashboard",
-    "Activity",
-    "Analytics",
-    "System",
-    "Deployments",
-    "My Settings",
-    "Team Settings",
-    "Help & Feedback",
-    "Log Out",
+    { title: "Home", href: "/" },
+    { title: "About", href: "/about" },
+    { title: "Projects", href: "/projects" },
+    { title: "Resume", href: "/resume" },
   ];
 
   return (
@@ -36,18 +30,13 @@ export default function NavbarComp() {
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="end">
-        <NavbarItem>
-          <Link href="/">Home</Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link href="#">About</Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link href="#">Projects</Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link href="#">Resume</Link>
-        </NavbarItem>
+        {menuItems.map((item, index) => (
+          <NavbarItem key={index}>
+            <Link href={item.href} className="text-xl">
+              {item.title}
+            </Link>
+          </NavbarItem>
+        ))}
       </NavbarContent>
 
       <NavbarMenuToggle
@@ -58,19 +47,8 @@ export default function NavbarComp() {
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-              color={
-                index === 2
-                  ? "primary"
-                  : index === menuItems.length - 1
-                  ? "danger"
-                  : "foreground"
-              }
-              className="w-full"
-              href="#"
-              size="lg"
-            >
-              {item}
+            <Link className="w-full" href={item.href} size="lg">
+              {item.title}
             </Link>
           </NavbarMenuItem>
         ))}
