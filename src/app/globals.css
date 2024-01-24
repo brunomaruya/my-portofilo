@@ -35,7 +35,7 @@ p {
 }
 
 .margin {
-  @apply mx-8 sm:mx-20;
+  @apply mx-8 sm:mx-20 xl:mx-56;
 }
 
 .bg-hero {

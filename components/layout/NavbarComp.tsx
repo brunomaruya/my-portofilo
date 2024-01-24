@@ -22,7 +22,7 @@ export default function NavbarComp() {
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-transparent">
+    <Navbar onMenuOpenChange={setIsMenuOpen} className="">
       <NavbarContent>
         <NavbarBrand className="text-primary text-3xl font-bold">
           Bm.
@@ -32,7 +32,7 @@ export default function NavbarComp() {
       <NavbarContent className="hidden sm:flex gap-4" justify="end">
         {menuItems.map((item, index) => (
           <NavbarItem key={index}>
-            <Link href={item.href} className="text-xl">
+            <Link href={item.href} className="text-xl text-text">
               {item.title}
             </Link>
           </NavbarItem>
