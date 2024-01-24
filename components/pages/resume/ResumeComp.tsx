@@ -29,7 +29,11 @@ export default function ResumeComp() {
 
   return (
     <div className="flex w-full flex-col ">
-      <Tabs aria-label="Options" className="xl:ml-28 mt-10">
+      <Tabs
+        aria-label="Options"
+        className="xl:ml-28 mt-10 "
+        variant="underlined"
+      >
         {resumes.map((resume) => (
           <Tab
             key={resume.language}
