@@ -11,6 +11,8 @@ import {
   NavbarMenu,
   NavbarMenuItem,
 } from "@nextui-org/react";
+import { usePathname } from "next/navigation";
+
 export default function NavbarComp() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
@@ -21,8 +23,28 @@ export default function NavbarComp() {
     { title: "Resume", href: "/resume" },
   ];
 
+  const pathname = usePathname();
+
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen} className="">
+    <Navbar
+      onMenuOpenChange={setIsMenuOpen}
+      classNames={{
+        item: [
+          "flex",
+          "relative",
+          "h-full",
+          "items-center",
+          "data-[active=true]:after:content-['']",
+          "data-[active=true]:after:absolute",
+          "data-[active=true]:after:bottom-0",
+          "data-[active=true]:after:left-0",
+          "data-[active=true]:after:right-0",
+          "data-[active=true]:after:h-[2px]",
+          "data-[active=true]:after:rounded-[2px]",
+          "data-[active=true]:after:bg-primary",
+        ],
+      }}
+    >
       <NavbarContent>
         <NavbarBrand className="text-primary text-3xl font-bold">
           Bm.
@@ -31,7 +53,10 @@ export default function NavbarComp() {
 
       <NavbarContent className="hidden sm:flex gap-4" justify="end">
         {menuItems.map((item, index) => (
-          <NavbarItem key={index}>
+          <NavbarItem
+            key={index}
+            isActive={pathname == item.href ? true : false}
+          >
             <Link href={item.href} className="text-xl text-text">
               {item.title}
             </Link>
