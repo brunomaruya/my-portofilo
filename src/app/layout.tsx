@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className="">
         <MainProvider>
           <NavbarComp />
-          <main className="margin  ">{children}</main>
+          <main className="margin min-h-screen ">{children}</main>
           <Footer />
         </MainProvider>
       </body>

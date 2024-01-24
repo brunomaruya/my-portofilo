@@ -73,7 +73,9 @@ export default function NavbarComp() {
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
-              className="w-full flex flex-col items-center text-xl"
+              className={`w-full flex flex-col items-center text-xl ${
+                pathname == item.href ? "text-primary" : "text-text"
+              }`}
               href={item.href}
               size="lg"
             >
