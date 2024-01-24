@@ -24,11 +24,14 @@ body {
 }
 
 body {
-  @apply gradient;
+  @apply bg-background;
+}
+p {
+  @apply mb-3;
 }
 
 .gradient {
-  @apply bg-gradient-to-tr from-background to-accent;
+  @apply bg-gradient-to-tr from-background  to-accent;
 }
 
 .margin {
