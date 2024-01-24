@@ -4,6 +4,7 @@ import "./globals.css";
 
 import MainProvider from "../../providers/MainProvider";
 import NavbarComp from "../../components/layout/NavbarComp";
+import Footer from "../../components/layout/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         <MainProvider>
           <NavbarComp />
           <main className="margin ">{children}</main>
+          <Footer />
         </MainProvider>
       </body>
     </html>
