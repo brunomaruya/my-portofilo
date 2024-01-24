@@ -8,21 +8,21 @@ export default function ProjectsComp() {
       <h1 className="text-4xl lg:text-5xl font-extrabold">
         My <span className="text-primary ">Projects</span>
       </h1>
-      <h6 className="mt-5 lg:text-xl">Here are a few of my projects</h6>
+      <h6 className="mt-5 lg:text-xl mb-10">Here are a few of my projects</h6>
       <div className="flex flex-wrap justify-center gap-7">
         {projects.map((project, index) => (
           <div
             key={index}
-            className="flex flex-col items-center w-96 border border-primary rounded-md p-10"
+            className="flex flex-col items-center w-96 border border-primary rounded-md p-5 md:p-10"
           >
             <Image
-              className="h-52 w-80 object-cover object-top"
+              className="h-52 w-80 object-cover object-top mb-5"
               width={500}
               height={500}
               alt="image"
               src={project.image}
             />
-            <h1>{project.title}</h1>
+            <h1 className="text-xl mb-3">{project.title}</h1>
             <p>{project.description}</p>
           </div>
         ))}
