@@ -21,7 +21,7 @@ export default function SkillSet() {
       <div className="flex flex-wrap gap-6 justify-center max-w-[1000px]">
         {skills.map((skill, index) => (
           <div
-            className="border border-primary grow  text-5xl px-4 py-2 md:px-14 md:py-10 flex flex-wrap justify-around items-center max-w-[250px]"
+            className="border border-primary rounded-md grow  text-6xl lg:text-8xl  px-6 py-4 md:px-14 lg:px-24 md:py-10 flex flex-wrap justify-around items-center max-w-[150px]"
             key={index}
           >
             <div>{skill}</div>
