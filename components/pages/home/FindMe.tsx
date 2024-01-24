@@ -12,7 +12,7 @@ export default function FindMe() {
         <h6 className="text-lg">
           Fell free to <span className="text-primary">connect</span> with me
         </h6>
-        <ul>
+        <ul className="mt-8">
           <li>
             <Link href="#">
               <LinkedinLogo size={32} />

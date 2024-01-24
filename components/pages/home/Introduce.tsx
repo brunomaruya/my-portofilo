@@ -14,7 +14,7 @@ export default function Introduce() {
         </p>
         <p className="mb-3">
           My expertise lies in using technologies such as{" "}
-          <span className="text-primary">JavaScript and TypeScript</span>J to
+          <span className="text-primary">JavaScript and TypeScript</span> to
           create dynamic and interactive user interfaces.
         </p>
         <p className="mb-3">

@@ -23,12 +23,16 @@ body {
   overflow-x: hidden;
 }
 
+body {
+  @apply gradient;
+}
+
 .gradient {
-  @apply bg-gradient-to-b from-accent to-background;
+  @apply bg-gradient-to-tr from-background to-accent;
 }
 
 .margin {
-  @apply mx-4 sm:mx-20;
+  @apply mx-8 sm:mx-20;
 }
 
 .bg-hero {

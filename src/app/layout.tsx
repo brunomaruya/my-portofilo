@@ -20,10 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="gradient">
+      <body className="">
         <MainProvider>
           <NavbarComp />
-          <main className="margin ">{children}</main>
+          <main className="margin  ">{children}</main>
           <Footer />
         </MainProvider>
       </body>
