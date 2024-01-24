@@ -23,6 +23,10 @@ body {
   overflow-x: hidden;
 }
 
+.gradient {
+  @apply bg-gradient-to-b from-accent to-background;
+}
+
 .margin {
   @apply mx-4 sm:mx-20;
 }

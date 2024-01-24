@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Introduce() {
   return (
-    <div className="mt-32 flex flex-col sm:flex-row items-center gap-8">
+    <div className="mt-32 flex flex-col lg:flex-row items-center gap-8">
       <div>
         <h1 className="text-4xl mb-6">
           LET ME <span className="text-primary">INTRODUCE</span> MYSELF
@@ -24,7 +24,7 @@ export default function Introduce() {
           of web applications.
         </p>
       </div>
-      <div className="rounded-md overflow-hidden">
+      <div className="rounded-md overflow-hidden ">
         <Image
           width={500}
           height={500}

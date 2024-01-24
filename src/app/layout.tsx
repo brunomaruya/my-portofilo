@@ -19,10 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className="gradient">
         <MainProvider>
           <NavbarComp />
-          <main className="margin">{children}</main>
+          <main className="margin ">{children}</main>
         </MainProvider>
       </body>
     </html>
