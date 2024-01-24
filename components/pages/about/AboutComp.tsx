@@ -4,7 +4,7 @@ import React from "react";
 export default function AboutComp() {
   return (
     <div className="mt-[64px] flex flex-col items-center">
-      <div className="flex flex-col lg:flex-row justify-between">
+      <div className="flex flex-col lg:flex-row gap-9 lg:gap-20 items-center justify-between">
         <div>
           <h1 className="text-3xl font-bold mb-8">
             Know Who <span className="text-primary">I am</span>
