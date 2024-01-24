@@ -47,7 +47,11 @@ export default function NavbarComp() {
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
-            <Link className="w-full" href={item.href} size="lg">
+            <Link
+              className="w-full flex flex-col items-center text-xl"
+              href={item.href}
+              size="lg"
+            >
               {item.title}
             </Link>
           </NavbarMenuItem>

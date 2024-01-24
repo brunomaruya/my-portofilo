@@ -14,7 +14,7 @@ export default function SkillSet() {
     <SiTailwindcss />,
   ];
   return (
-    <div className="flex flex-col items-center ">
+    <div className="flex flex-col items-center mt-10 ">
       <h1 className="text-primary font-extrabold text-5xl text-center mb-20">
         SkillSet
       </h1>
