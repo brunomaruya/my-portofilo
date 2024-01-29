@@ -11,7 +11,7 @@ export default function SkillSet() {
     { name: "TypeScript", icon: <SiTypescript /> },
     { name: "React", icon: <FaReact /> },
     { name: "NextJs", icon: <TbBrandNextjs /> },
-    { name: "Tailwind", icon: <SiTailwindcss /> },
+    { name: "TailwindCss", icon: <SiTailwindcss /> },
   ];
   return (
     <div className="flex flex-col items-center mt-10 ">
