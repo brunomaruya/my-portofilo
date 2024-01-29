@@ -3,6 +3,7 @@
 import { LinkedinLogo } from "@phosphor-icons/react";
 import Link from "next/link";
 import React from "react";
+import { contacts } from "../../../constants/contacts";
 
 export default function FindMe() {
   return (
@@ -12,12 +13,14 @@ export default function FindMe() {
         <h6 className="text-lg">
           Fell free to <span className="text-primary">connect</span> with me
         </h6>
-        <ul className="mt-8">
-          <li>
-            <Link href="#">
-              <LinkedinLogo size={32} />
-            </Link>
-          </li>
+        <ul className="mt-8 flex gap-3">
+          {contacts.map((contact, index) => (
+            <div className="text-3xl" key={index}>
+              <Link href={contact.link} target="_blank">
+                {contact.icon}
+              </Link>
+            </div>
+          ))}
         </ul>
       </div>
     </div>

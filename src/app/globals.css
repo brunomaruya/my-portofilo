@@ -26,6 +26,11 @@ body {
 body {
   @apply bg-background;
 }
+
+.filter {
+  filter: invert(94%) sepia(94%) saturate(23%) hue-rotate(74deg)
+    brightness(107%) contrast(105%);
+}
 p {
   @apply mb-3;
 }

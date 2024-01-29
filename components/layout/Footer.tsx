@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <div className="   bg-black mt-32  flex flex-col sm:flex-row gap-3 items-center justify-between px-20 py-3">
       <div className="text-sm sm:text-md">Bruno Maruya</div>
-      <div>
+      <div className="flex gap-3">
         {contacts.map((contact, index) => (
           <div className="text-3xl" key={index}>
             <Link href={contact.link} target="_blank">
