@@ -1,4 +1,4 @@
-import { LinkedinLogo } from "@phosphor-icons/react";
+import { GithubLogo, LinkedinLogo } from "@phosphor-icons/react";
 import Image from "next/image";
 import indeedIcon from "../public/icons/indeed.svg";
 
@@ -18,5 +18,9 @@ export const contacts = [
         className="filter"
       />
     ),
+  },
+  {
+    link: "https://github.com/brunomaruya",
+    icon: <GithubLogo />,
   },
 ];
