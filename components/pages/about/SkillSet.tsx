@@ -7,11 +7,11 @@ import { TbBrandNextjs, TbBrandTypescript } from "react-icons/tb";
 
 export default function SkillSet() {
   const skills = [
-    <IoLogoJavascript />,
-    <SiTypescript />,
-    <FaReact />,
-    <TbBrandNextjs />,
-    <SiTailwindcss />,
+    { name: "Javascript", icon: <IoLogoJavascript /> },
+    { name: "TypeScript", icon: <SiTypescript /> },
+    { name: "React", icon: <FaReact /> },
+    { name: "NextJs", icon: <TbBrandNextjs /> },
+    { name: "Tailwind", icon: <SiTailwindcss /> },
   ];
   return (
     <div className="flex flex-col items-center mt-10 ">
@@ -24,7 +24,8 @@ export default function SkillSet() {
             className="border border-primary rounded-md grow  text-6xl lg:text-8xl  px-6 py-4 md:px-14 lg:px-24 md:py-10 flex flex-wrap justify-around items-center max-w-[150px]"
             key={index}
           >
-            <div>{skill}</div>
+            <div>{skill.icon}</div>
+            <div className="text-medium">{skill.name}</div>
           </div>
         ))}
       </div>
