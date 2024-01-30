@@ -9,7 +9,7 @@ export default function Introduce() {
           LET ME <span className="text-primary">INTRODUCE</span> MYSELF
         </h1>
         <p className="mb-3">
-          Hello! I'm a skilled programmer with a focus on{" "}
+          Hello! I&apos;m a skilled programmer with a focus on{" "}
           <span className="text-primary">front-end development</span>.
         </p>
         <p className="mb-3">
@@ -18,7 +18,7 @@ export default function Introduce() {
           create dynamic and interactive user interfaces.
         </p>
         <p className="mb-3">
-          I'm well-versed in frameworks like{" "}
+          I&apos;m well-versed in frameworks like{" "}
           <span className="text-primary">Next.js</span> , which allows for
           efficient and server-side rendering, enhancing the overall performance
           of web applications.
