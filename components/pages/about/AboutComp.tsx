@@ -10,7 +10,7 @@ export default function AboutComp() {
             Know Who <span className="text-primary">I am</span>
           </h1>
           <p>
-            Hello! I'm [Your Full Name], a [Your Program or Field of Study]
+            Hello! I&apos;m [Your Full Name], a [Your Program or Field of Study]
             enthusiast with a passion for [Specific Interest or Focus].
           </p>
           <p>

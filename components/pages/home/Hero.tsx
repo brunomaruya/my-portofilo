@@ -7,7 +7,7 @@ export default function Hero() {
         <div className="margin">
           <h1 className="text-4xl md:text-4xl">Hi There!</h1>
           <h1 className="text-4xl md:text-5xl mt-3">
-            I'M <span className=" text-primary ">BRUNO MARUYA</span>
+            I&apos;M <span className=" text-primary ">BRUNO MARUYA</span>
           </h1>
           <h2 className="text-primary mt-5 text-3xl md:text-3xl">
             NOT SURE YET
