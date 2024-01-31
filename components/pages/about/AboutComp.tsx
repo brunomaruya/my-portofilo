@@ -10,16 +10,16 @@ export default function AboutComp() {
             Know Who <span className="text-primary">I am</span>
           </h1>
           <p>
-            Hello! I&apos;m [Your Full Name], a [Your Program or Field of Study]
-            enthusiast with a passion for [Specific Interest or Focus].
+            Hello! I&apos;m Bruno Maruya, a programmer enthusiast with a passion
+            for Web Development.
           </p>
           <p>
-            My journey in [Field of Study] has equipped me with a strong
-            foundation in [Key Program Skills].
+            My journey in Web Development has equipped me with a strong
+            foundation in JavaScript.
           </p>
           <p>
-            I thrive on [Describe What Motivates You or Your Key Strengths] and
-            am always eager to [Your Career Aspirations or Learning Goals].
+            I thrive on being a better programmer and am always eager to learn
+            new skills.
           </p>
         </div>
         <Image
