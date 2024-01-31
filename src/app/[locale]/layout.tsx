@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "../../app/globals.css";
 
-import MainProvider from "../../providers/MainProvider";
-import NavbarComp from "../../components/layout/NavbarComp";
-import Footer from "../../components/layout/Footer";
+import MainProvider from "../../../providers/MainProvider";
+import NavbarComp from "../../../components/layout/NavbarComp";
+import Footer from "../../../components/layout/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,11 +15,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params: { locale },
 }: Readonly<{
   children: React.ReactNode;
+  params: { locale: string };
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning>
       <body className="">
         <MainProvider>
           <NavbarComp />

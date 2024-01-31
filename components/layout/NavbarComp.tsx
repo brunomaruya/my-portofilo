@@ -18,7 +18,7 @@ export default function NavbarComp() {
 
   const menuItems = [
     { title: "Home", href: "/" },
-    { title: "About", href: "/about" },
+    { title: "About", href: "/jp/about" },
     { title: "Projects", href: "/projects" },
     { title: "Resume", href: "/resume" },
   ];
