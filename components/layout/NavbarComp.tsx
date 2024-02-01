@@ -14,6 +14,7 @@ import { usePathname, useRouter } from "next/navigation";
 
 import { useLocalStorage } from "@uidotdev/usehooks";
 import { Link } from "@/navigation";
+import Image from "next/image";
 
 export default function NavbarComp() {
   const pathname = usePathname();
@@ -68,14 +69,15 @@ export default function NavbarComp() {
             </Link>
           </NavbarItem>
         ))}
-        <NavbarItem>
+        <NavbarItem className="flex gap-2">
           <Link href="/" locale="jp">
-            jp
+            Jp
           </Link>
           <Link href="/" locale="en">
-            en
+            En
           </Link>
         </NavbarItem>
+        <NavbarItem></NavbarItem>
       </NavbarContent>
 
       <NavbarMenuToggle
