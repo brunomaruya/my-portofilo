@@ -1,29 +1,43 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Navbar,
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  Link,
   Button,
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
 } from "@nextui-org/react";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
+import { useLocalStorage } from "@uidotdev/usehooks";
 
 export default function NavbarComp() {
+  const pathname = usePathname();
+
+  const currLanguage = () => {
+    return pathname.split("/")[1];
+  };
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
+  const [language, setLanguage] = useLocalStorage("language", "jp");
+
+  const handleOnClick = () => {
+    setLanguage((prev) => (prev == "en" ? "jp" : "en"));
+    if (currLanguage() !== language) window.location.assign(`/${language}`);
+  };
+  useEffect(() => {
+    console.log(currLanguage());
+  }, []);
 
   const menuItems = [
     { title: "Home", href: "/" },
-    { title: "About", href: "/jp/about" },
-    { title: "Projects", href: "/projects" },
-    { title: "Resume", href: "/resume" },
+    { title: "About", href: `/${language}/about` },
+    { title: "Projects", href: `/${language}/projects` },
+    { title: "Resume", href: `/${language}/resume` },
   ];
-
-  const pathname = usePathname();
 
   return (
     <Navbar
@@ -62,6 +76,11 @@ export default function NavbarComp() {
             </Link>
           </NavbarItem>
         ))}
+        <NavbarItem>
+          <div className="hover:cursor-pointer" onClick={() => handleOnClick()}>
+            {language == "en" ? "jp" : "en"}
+          </div>
+        </NavbarItem>
       </NavbarContent>
 
       <NavbarMenuToggle
@@ -77,7 +96,6 @@ export default function NavbarComp() {
                 pathname == item.href ? "text-primary" : "text-text"
               }`}
               href={item.href}
-              size="lg"
             >
               {item.title}
             </Link>
