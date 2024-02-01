@@ -10,33 +10,25 @@ import {
   NavbarMenu,
   NavbarMenuItem,
 } from "@nextui-org/react";
-import { usePathname } from "next/navigation";
-import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
+
 import { useLocalStorage } from "@uidotdev/usehooks";
+import { Link } from "@/navigation";
 
 export default function NavbarComp() {
   const pathname = usePathname();
+  const router = useRouter();
 
   const currLanguage = () => {
     return pathname.split("/")[1];
   };
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const [language, setLanguage] = useLocalStorage("language", "jp");
-
-  const handleOnClick = () => {
-    setLanguage((prev) => (prev == "en" ? "jp" : "en"));
-    if (currLanguage() !== language) window.location.assign(`/${language}`);
-  };
-  useEffect(() => {
-    console.log(currLanguage());
-  }, []);
-
   const menuItems = [
     { title: "Home", href: "/" },
-    { title: "About", href: `/${language}/about` },
-    { title: "Projects", href: `/${language}/projects` },
-    { title: "Resume", href: `/${language}/resume` },
+    { title: "About", href: `/about` },
+    { title: "Projects", href: `/projects` },
+    { title: "Resume", href: `/resume` },
   ];
 
   return (
@@ -77,9 +69,12 @@ export default function NavbarComp() {
           </NavbarItem>
         ))}
         <NavbarItem>
-          <div className="hover:cursor-pointer" onClick={() => handleOnClick()}>
-            {language == "en" ? "jp" : "en"}
-          </div>
+          <Link href="/" locale="jp">
+            jp
+          </Link>
+          <Link href="/" locale="en">
+            en
+          </Link>
         </NavbarItem>
       </NavbarContent>
 
