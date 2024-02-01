@@ -17,7 +17,7 @@ export default function Introduce() {
           })}
         </p>
         <p className="mb-3">
-          {t.rich("first paragraph", {
+          {t.rich("second paragraph", {
             span: (chunks) => <span className="text-primary">{chunks}</span>,
           })}
         </p>

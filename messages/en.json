@@ -10,7 +10,8 @@
       "LET ME": "LET ME",
       "INTRODUCE": "INTRODUCE ",
       "MYSELF": "MYSELF",
-      "first paragraph": "Hello! I'm a skilled programmer with a focus on <span>front-end development</span>."
+      "first paragraph": "Hello! I'm a skilled programmer with a focus on <span>front-end development</span>.",
+      "second paragraph": " My expertise lies in using technologies such as <span>JavaScript and TypeScript</span> to create dynamic and interactive user interfaces."
     }
   }
 }
