@@ -17,9 +17,9 @@ export default function Introduce() {
           })}
         </p>
         <p className="mb-3">
-          My expertise lies in using technologies such as{" "}
-          <span className="text-primary">JavaScript and TypeScript</span> to
-          create dynamic and interactive user interfaces.
+          {t.rich("first paragraph", {
+            span: (chunks) => <span className="text-primary">{chunks}</span>,
+          })}
         </p>
         <p className="mb-3">
           I&apos;m well-versed in frameworks like{" "}

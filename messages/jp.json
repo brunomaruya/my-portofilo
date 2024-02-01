@@ -10,7 +10,8 @@
       "LET ME": "",
       "INTRODUCE": "紹介",
       "MYSELF": "させてください",
-      "first paragraph": "こんにちは！私はフロントエンド<span>開発</span>を中心にスキルを持つプログラマーです。"
+      "first paragraph": "こんにちは！私はフロントエンド<span>開発</span>を中心にスキルを持つプログラマーです。",
+      "second paragraph": " My expertise lies in using technologies such as <span>JavaScript and TypeScript</span> to create dynamic and interactive user interfaces."
     }
   }
 }
