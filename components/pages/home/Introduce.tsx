@@ -1,16 +1,20 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
 
 export default function Introduce() {
+  const t = useTranslations("Index.Introduce");
   return (
     <div className="mt-32 flex flex-col lg:flex-row items-center gap-8">
       <div>
         <h1 className="text-4xl mb-6">
-          LET ME <span className="text-primary">INTRODUCE</span> MYSELF
+          {t("LET ME")} <span className="text-primary">{t("INTRODUCE")}</span>
+          {t("MYSELF")}
         </h1>
         <p className="mb-3">
-          Hello! I&apos;m a skilled programmer with a focus on{" "}
-          <span className="text-primary">front-end development</span>.
+          {t.rich("first paragraph", {
+            span: (chunks) => <span className="text-primary">{chunks}</span>,
+          })}
         </p>
         <p className="mb-3">
           My expertise lies in using technologies such as{" "}

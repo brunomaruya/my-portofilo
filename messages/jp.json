@@ -1,5 +1,16 @@
 {
   "Index": {
-    "title": "おはよう世界！"
+    "Hero": {
+      "Hi There!": "こんにちは！",
+      "I'm": "私は",
+      "Bruno Maruya": "マルヤ ブルノです",
+      "A WEB DEVELOPER": "ウェブ開発者です"
+    },
+    "Introduce": {
+      "LET ME": "",
+      "INTRODUCE": "紹介",
+      "MYSELF": "させてください",
+      "first paragraph": "こんにちは！私はフロントエンド<span>開発</span>を中心にスキルを持つプログラマーです。"
+    }
   }
 }

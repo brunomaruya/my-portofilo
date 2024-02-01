@@ -1,5 +1,16 @@
 {
   "Index": {
-    "title": "Hello world!"
+    "Hero": {
+      "Hi There!": "Hi There!",
+      "I'm": "I'm ",
+      "Bruno Maruya": "Bruno Maruya",
+      "A WEB DEVELOPER": "A WEB DEVELOPER"
+    },
+    "Introduce": {
+      "LET ME": "LET ME",
+      "INTRODUCE": "INTRODUCE ",
+      "MYSELF": "MYSELF",
+      "first paragraph": "Hello! I'm a skilled programmer with a focus on <span>front-end development</span>."
+    }
   }
 }
