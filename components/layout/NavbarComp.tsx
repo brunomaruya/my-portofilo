@@ -98,6 +98,14 @@ export default function NavbarComp() {
             </Link>
           </NavbarMenuItem>
         ))}
+        <NavbarItem className="flex gap-2 flex-col">
+          <Link href="/" locale="jp">
+            Jp
+          </Link>
+          <Link href="/" locale="en">
+            En
+          </Link>
+        </NavbarItem>
       </NavbarMenu>
     </Navbar>
   );
