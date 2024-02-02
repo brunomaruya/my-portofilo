@@ -11,7 +11,8 @@
       "INTRODUCE": "紹介",
       "MYSELF": "させてください",
       "first paragraph": "こんにちは！私はフロントエンド<span>開発</span>を中心にスキルを持つプログラマーです。",
-      "second paragraph": " My expertise lies in using technologies such as <span>JavaScript and TypeScript</span> to create dynamic and interactive user interfaces."
+      "second paragraph": " 私の専門は、<span>JavaScriptやTypeScript</span> などの技術を使用して、動的でインタラクティブなユーザーインターフェースを作成することにあります。",
+      "third paragraph": "私は、<span>Next.js</span>のようなフレームワークに精通しており、効率的でサーバーサイドのレンダリングが可能で、Webアプリケーションの全体的なパフォーマンスを向上させることができます。"
     }
   }
 }

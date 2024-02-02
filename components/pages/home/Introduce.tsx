@@ -22,10 +22,9 @@ export default function Introduce() {
           })}
         </p>
         <p className="mb-3">
-          I&apos;m well-versed in frameworks like{" "}
-          <span className="text-primary">Next.js</span> , which allows for
-          efficient and server-side rendering, enhancing the overall performance
-          of web applications.
+          {t.rich("third paragraph", {
+            span: (chunks) => <span className="text-primary">{chunks}</span>,
+          })}
         </p>
       </div>
       <div className="rounded-md overflow-hidden ">

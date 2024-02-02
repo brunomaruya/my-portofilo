@@ -11,7 +11,8 @@
       "INTRODUCE": "INTRODUCE ",
       "MYSELF": "MYSELF",
       "first paragraph": "Hello! I'm a skilled programmer with a focus on <span>front-end development</span>.",
-      "second paragraph": " My expertise lies in using technologies such as <span>JavaScript and TypeScript</span> to create dynamic and interactive user interfaces."
+      "second paragraph": " My expertise lies in using technologies such as <span>JavaScript and TypeScript</span> to create dynamic and interactive user interfaces.",
+      "third paragraph": "I'm well-versed in frameworks like <span>Next.js</span> , which allows for efficient and server-side rendering, enhancing the overall performance of web applications."
     }
   }
 }
