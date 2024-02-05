@@ -12,17 +12,20 @@ import {
 } from "@nextui-org/react";
 import { usePathname, useRouter } from "next/navigation";
 
-import { useLocalStorage } from "@uidotdev/usehooks";
 import { Link } from "@/navigation";
-import Image from "next/image";
 
 export default function NavbarComp() {
   const pathname = usePathname();
-  const router = useRouter();
 
-  const currLanguage = () => {
-    return pathname.split("/")[1];
+  const getPathName = () => {
+    const pagePath = pathname.split("/")[2];
+    if (pagePath === undefined) {
+      return "/";
+    } else {
+      return `/${pagePath}`;
+    }
   };
+
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
@@ -70,10 +73,10 @@ export default function NavbarComp() {
           </NavbarItem>
         ))}
         <NavbarItem className="flex gap-2">
-          <Link href="/" locale="jp">
+          <Link href={getPathName()} locale="jp">
             Jp
           </Link>
-          <Link href="/" locale="en">
+          <Link href={getPathName()} locale="en">
             En
           </Link>
         </NavbarItem>
@@ -99,7 +102,7 @@ export default function NavbarComp() {
           </NavbarMenuItem>
         ))}
         <NavbarItem className="flex gap-2 flex-col">
-          <Link href="#" locale="jp">
+          <Link href="#" locale="jp" onClick={() => getPathName()}>
             Jp
           </Link>
           <Link href="#" locale="en">
