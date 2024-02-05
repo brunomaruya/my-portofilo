@@ -5,6 +5,7 @@ import "../../app/globals.css";
 import MainProvider from "../../../providers/MainProvider";
 import NavbarComp from "../../../components/layout/NavbarComp";
 import Footer from "../../../components/layout/Footer";
+import { NextIntlClientProvider, useMessages } from "next-intl";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,13 +21,16 @@ export default function RootLayout({
   children: React.ReactNode;
   params: { locale: string };
 }>) {
+  const messages = useMessages();
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className="">
         <MainProvider>
-          <NavbarComp />
-          <main className="margin min-h-screen ">{children}</main>
-          <Footer />
+          <NextIntlClientProvider locale={locale} messages={messages}>
+            <NavbarComp />
+            <main className="margin min-h-screen ">{children}</main>
+            <Footer />
+          </NextIntlClientProvider>
         </MainProvider>
       </body>
     </html>

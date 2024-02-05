@@ -1,36 +1,34 @@
 "use client";
-import { Tabs, Tab, Card, CardBody } from "@nextui-org/react";
+import { Tabs, Tab } from "@nextui-org/react";
 import Image from "next/image";
 import englishResume from "../../../public/resumes/EnglishResume.jpg";
-import test from "./English.jpg";
 import japaneseResume from "../../../public/resumes/rirekisho1.jpg";
 import japaneseResume2 from "../../../public/resumes/rirekisho2.jpg";
 import { Button } from "@nextui-org/react";
-
 import React from "react";
 import useDownloader from "react-use-downloader";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function ResumeComp() {
   const { download } = useDownloader();
+  const t = useTranslations("Resume");
   //TODO: update resumes
   const resumes = [
     {
-      language: "Japanese",
+      language: t("language.Japanese"),
       images: [japaneseResume, japaneseResume2],
       fileUrl: "",
       filename: "履歴書",
       open: "",
     },
     {
-      language: "English",
+      language: t("language.English"),
       images: [englishResume],
       fileUrl: "/resumes/EnglishResumePDF.pdf",
       filename: "BrunoMaruyaResume.pdf",
     },
   ];
-
-  console.log(resumes[1].open);
 
   return (
     <div className="flex w-full flex-col ">

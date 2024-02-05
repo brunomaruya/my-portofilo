@@ -20,5 +20,11 @@
     "first paragraph": "Hello! I'm Bruno Maruya, a programmer enthusiast with a passion for Web Development.",
     "second paragraph": "My journey in Web Development has equipped me with a strong foundation in JavaScript.",
     "third paragraph": "I thrive on being a better programmer and am always eager to learn new skills."
+  },
+  "Resume": {
+    "language": {
+      "Japanese": "Japanese",
+      "English": "English"
+    }
   }
 }

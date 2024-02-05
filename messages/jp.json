@@ -20,5 +20,11 @@
     "first paragraph": "こんにちは！私はマルヤ・ブルーノです。ウェブ開発に情熱を持つプログラマーの愛好家です。",
     "second paragraph": "ウェブ開発の旅は、私に強固なJavaScriptの基礎を備えさせました。",
     "third paragraph": "私はより良いプログラマーになることを目指し、常に新しいスキルを学びたいと思っています。"
+  },
+  "Resume": {
+    "language": {
+      "Japanese": "日本語",
+      "English": "英語"
+    }
   }
 }
