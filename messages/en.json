@@ -14,5 +14,11 @@
       "second paragraph": " My expertise lies in using technologies such as <span>JavaScript and TypeScript</span> to create dynamic and interactive user interfaces.",
       "third paragraph": "I'm well-versed in frameworks like <span>Next.js</span> , which allows for efficient and server-side rendering, enhancing the overall performance of web applications."
     }
+  },
+  "AboutMe": {
+    "title": "Know Who <span>I am</span>",
+    "first paragraph": "Hello! I'm Bruno Maruya, a programmer enthusiast with a passion for Web Development.",
+    "second paragraph": "My journey in Web Development has equipped me with a strong foundation in JavaScript.",
+    "third paragraph": "I thrive on being a better programmer and am always eager to learn new skills."
   }
 }

@@ -14,5 +14,11 @@
       "second paragraph": " 私の専門は、<span>JavaScriptやTypeScript</span> などの技術を使用して、動的でインタラクティブなユーザーインターフェースを作成することにあります。",
       "third paragraph": "私は、<span>Next.js</span>のようなフレームワークに精通しており、効率的でサーバーサイドのレンダリングが可能で、Webアプリケーションの全体的なパフォーマンスを向上させることができます。"
     }
+  },
+  "AboutMe": {
+    "title": "<span>紹介</span>します",
+    "first paragraph": "こんにちは！私はブルーノ・マルヤです。ウェブ開発に情熱を持つプログラマーの愛好家です。",
+    "second paragraph": "ウェブ開発の旅は、私に強固なJavaScriptの基礎を備えさせました。",
+    "third paragraph": "私はより良いプログラマーになることを目指し、常に新しいスキルを学びたいと思っています。"
   }
 }

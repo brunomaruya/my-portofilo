@@ -1,26 +1,21 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import React from "react";
 
 export default function AboutComp() {
+  const t = useTranslations("AboutMe");
   return (
     <div className="mt-[64px] flex flex-col items-center">
       <div className="flex flex-col lg:flex-row gap-9 lg:gap-20 items-center justify-between">
         <div>
           <h1 className="text-3xl lg:text-5xl font-bold mb-8">
-            Know Who <span className="text-primary">I am</span>
+            {t.rich("title", {
+              span: (chunks) => <span className="text-primary">{chunks}</span>,
+            })}
           </h1>
-          <p>
-            Hello! I&apos;m Bruno Maruya, a programmer enthusiast with a passion
-            for Web Development.
-          </p>
-          <p>
-            My journey in Web Development has equipped me with a strong
-            foundation in JavaScript.
-          </p>
-          <p>
-            I thrive on being a better programmer and am always eager to learn
-            new skills.
-          </p>
+          <p>{t("first paragraph")}</p>
+          <p>{t("second paragraph")}</p>
+          <p>{t("third paragraph")}</p>
         </div>
         <Image
           width={500}

@@ -99,10 +99,10 @@ export default function NavbarComp() {
           </NavbarMenuItem>
         ))}
         <NavbarItem className="flex gap-2 flex-col">
-          <Link href="/" locale="jp">
+          <Link href="#" locale="jp">
             Jp
           </Link>
-          <Link href="/" locale="en">
+          <Link href="#" locale="en">
             En
           </Link>
         </NavbarItem>
