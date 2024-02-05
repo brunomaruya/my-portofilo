@@ -80,7 +80,6 @@ export default function NavbarComp() {
             En
           </Link>
         </NavbarItem>
-        <NavbarItem></NavbarItem>
       </NavbarContent>
 
       <NavbarMenuToggle
