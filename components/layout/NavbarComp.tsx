@@ -13,9 +13,11 @@ import {
 import { usePathname, useRouter } from "next/navigation";
 
 import { Link } from "@/navigation";
+import { useTranslations } from "next-intl";
 
 export default function NavbarComp() {
   const pathname = usePathname();
+  const t = useTranslations("Navbar.Links");
 
   const getPagePath = () => {
     const pagePath = pathname.split("/")[2];
@@ -29,10 +31,10 @@ export default function NavbarComp() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
-    { title: "Home", href: "/" },
-    { title: "About", href: `/about` },
-    { title: "Projects", href: `/projects` },
-    { title: "Resume", href: `/resume` },
+    { title: t("Home"), href: "/" },
+    { title: t("About"), href: `/about` },
+    { title: t("Projects"), href: `/projects` },
+    { title: t("Resume"), href: `/resume` },
   ];
 
   return (
@@ -74,10 +76,10 @@ export default function NavbarComp() {
         ))}
         <NavbarItem className="flex gap-2">
           <Link href={getPagePath()} locale="jp">
-            Jp
+            {t("Japanese")}
           </Link>
           <Link href={getPagePath()} locale="en">
-            En
+            {t("English")}
           </Link>
         </NavbarItem>
       </NavbarContent>
@@ -102,10 +104,10 @@ export default function NavbarComp() {
         ))}
         <NavbarItem className="flex gap-2 flex-col">
           <Link href={getPagePath()} locale="jp">
-            Jp
+            {t("Japanese")}
           </Link>
           <Link href={getPagePath()} locale="en">
-            En
+            {t("English")}
           </Link>
         </NavbarItem>
       </NavbarMenu>

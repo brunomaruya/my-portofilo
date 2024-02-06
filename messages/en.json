@@ -32,7 +32,9 @@
       "Home": "Home",
       "About": "About",
       "Projects": "Projects",
-      "Resume": "Resume"
+      "Resume": "Resume",
+      "English": "En",
+      "Japanese": "Jp"
     }
   }
 }
