@@ -26,5 +26,13 @@
       "Japanese": "日本語",
       "English": "英語"
     }
+  },
+  "Navbar": {
+    "Links": {
+      "Home": "ホーム",
+      "About": "アバウト",
+      "Projects": "プロジェクト",
+      "Resume": "レジュメ"
+    }
   }
 }
