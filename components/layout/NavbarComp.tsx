@@ -17,7 +17,7 @@ import { Link } from "@/navigation";
 export default function NavbarComp() {
   const pathname = usePathname();
 
-  const getPathName = () => {
+  const getPagePath = () => {
     const pagePath = pathname.split("/")[2];
     if (pagePath === undefined) {
       return "/";
@@ -65,7 +65,7 @@ export default function NavbarComp() {
         {menuItems.map((item, index) => (
           <NavbarItem
             key={index}
-            isActive={pathname == item.href ? true : false}
+            isActive={getPagePath() == item.href ? true : false}
           >
             <Link href={item.href} className="text-xl text-text">
               {item.title}
@@ -73,10 +73,10 @@ export default function NavbarComp() {
           </NavbarItem>
         ))}
         <NavbarItem className="flex gap-2">
-          <Link href={getPathName()} locale="jp">
+          <Link href={getPagePath()} locale="jp">
             Jp
           </Link>
-          <Link href={getPathName()} locale="en">
+          <Link href={getPagePath()} locale="en">
             En
           </Link>
         </NavbarItem>
@@ -101,10 +101,10 @@ export default function NavbarComp() {
           </NavbarMenuItem>
         ))}
         <NavbarItem className="flex gap-2 flex-col">
-          <Link href="#" locale="jp" onClick={() => getPathName()}>
+          <Link href={getPagePath()} locale="jp">
             Jp
           </Link>
-          <Link href="#" locale="en">
+          <Link href={getPagePath()} locale="en">
             En
           </Link>
         </NavbarItem>
