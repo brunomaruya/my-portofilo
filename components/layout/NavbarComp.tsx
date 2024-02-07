@@ -40,6 +40,7 @@ export default function NavbarComp() {
   return (
     <Navbar
       onMenuOpenChange={setIsMenuOpen}
+      isMenuOpen={isMenuOpen}
       classNames={{
         item: [
           "flex",
@@ -93,6 +94,7 @@ export default function NavbarComp() {
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
+              onClick={() => setIsMenuOpen(false)}
               className={`w-full flex flex-col items-center text-xl ${
                 pathname == item.href ? "text-primary" : "text-text"
               }`}
@@ -103,10 +105,18 @@ export default function NavbarComp() {
           </NavbarMenuItem>
         ))}
         <NavbarItem className="flex gap-2 flex-col">
-          <Link href={getPagePath()} locale="jp">
+          <Link
+            onClick={() => setIsMenuOpen(false)}
+            href={getPagePath()}
+            locale="jp"
+          >
             {t("Japanese")}
           </Link>
-          <Link href={getPagePath()} locale="en">
+          <Link
+            onClick={() => setIsMenuOpen(false)}
+            href={getPagePath()}
+            locale="en"
+          >
             {t("English")}
           </Link>
         </NavbarItem>
