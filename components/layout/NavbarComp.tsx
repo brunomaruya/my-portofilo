@@ -96,7 +96,7 @@ export default function NavbarComp() {
             <Link
               onClick={() => setIsMenuOpen(false)}
               className={`w-full flex flex-col items-center text-xl ${
-                pathname == item.href ? "text-primary" : "text-text"
+                getPagePath() == item.href ? "text-primary" : "text-text"
               }`}
               href={item.href}
             >
