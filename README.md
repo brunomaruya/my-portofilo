@@ -1,6 +1,6 @@
 <h1 align="center">
-  SkecthShare<br/>
-  <a href="https://sketchshare.vercel.app/" target="_blank">sketchshare.vercel.app</a>
+  My Portfolio<br/>
+  <a href="https://brunomaruya.vercel.app/" target="_blank">brunomaruya.vercel.app</a>
 </h1><br/>
 <p align="center">
    <img alt="brunomaruya" title="brunomaruya" src="thumbnails/desktop.png" height="300" >
@@ -15,7 +15,7 @@
 
 ## Introduction
 
-SketchShare is a vibrant online community where users can share images, add descriptions, and interact with other users' posts. The platform allows users to create accounts and log in to personalize their experience.
+Welcome to my online portfolio! I'm thrilled to showcase my skills and projects as a web developer and programmer. My portfolio serves as a digital representation of my expertise, experience, and passion for creating exceptional web solutions.
 <!--
 <p align="center">
   <img src = "http://i.imgur.com/HowF6aM.png" width=350>
@@ -23,13 +23,9 @@ SketchShare is a vibrant online community where users can share images, add desc
 
 ## Features
 
-A few of the things you can do with GitPoint:
 
-* User Registration and Login
-* Image Upload
-* Explore and Discover
-* Dark Mode
-* Web responsive
+* Multi-language
+* Web Responsive
 
  <!--<p align="center">
   <img src = "http://i.imgur.com/IkSnFRL.png" width=700>
