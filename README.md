@@ -42,6 +42,8 @@ Welcome to my online portfolio! I'm thrilled to showcase my skills and projects 
 First, run the development server:
 
 ```bash
+git clone https://github.com/brunomaruya/my-portofilo-v2.git
+
 npm run dev
 # or
 yarn dev
