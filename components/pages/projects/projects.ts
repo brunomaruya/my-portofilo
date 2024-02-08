@@ -1,5 +1,7 @@
+import { useTranslations } from "next-intl";
 import chriztiank from "../../../public/thumbnails/chriztiank.png";
 import sketchshare from "../../../public/thumbnails/sketchshare.png";
+
 export const projects = [
   {
     title: "ChriztianK",
