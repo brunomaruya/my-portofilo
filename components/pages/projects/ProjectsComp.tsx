@@ -17,7 +17,7 @@ export default function ProjectsComp() {
             className="flex flex-col items-center  border border-primary w-96 bg-background rounded-md p-5 md:p-10"
           >
             <Image
-              className="h-52 w-80 object-cover object-top mb-5"
+              className="h-40 w-80 object-cover object-top  mb-5"
               width={500}
               height={500}
               alt="image"

@@ -1,16 +1,18 @@
+import chriztiank from "../../../public/thumbnails/chriztiank.png";
+import sketchshare from "../../../public/thumbnails/sketchshare.png";
 export const projects = [
   {
-    title: "title 1 ",
+    title: "ChriztianK",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam unde doloremque alias esse, earum dolor tenetur aliquam officiis consequatur quidem, accusamus harum similique sint qui autem odit explicabo assumenda eligendi.",
-    image:
-      "https://images.unsplash.com/photo-1705905272120-70576178b4d3?q=80&w=1949&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "Welcome to the online portfolio of Chistian Kenji, a passionate photographer capturing the essence of Japan through his lens. Immerse yourself in the beauty of Japanese landscapes, culture, and moments frozen in time.",
+    image: chriztiank,
+    link: "https://chriztiank.vercel.app/",
   },
   {
-    title: "title 2 ",
+    title: "SkecthShare",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam unde doloremque alias esse, earum dolor tenetur aliquam officiis consequatur quidem, accusamus harum similique sint qui autem odit explicabo assumenda eligendi.",
-    image:
-      "https://images.unsplash.com/photo-1705905272120-70576178b4d3?q=80&w=1949&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "SketchShare is a vibrant online community where users can share images, add descriptions, and interact with other users' posts. The platform allows users to create accounts and log in to personalize their experience.",
+    image: sketchshare,
+    link: "https://sketchshare.vercel.app/",
   },
 ];
