@@ -2,8 +2,8 @@
 import { Tabs, Tab } from "@nextui-org/react";
 import Image from "next/image";
 import englishResume from "../../../public/resumes/EnglishResume.jpg";
-import japaneseResume from "../../../public/resumes/rirekisho1.jpg";
-import japaneseResume2 from "../../../public/resumes/rirekisho2.jpg";
+import japaneseResume from "../../../public/resumes/japanese_1.jpg";
+import japaneseResume2 from "../../../public/resumes/japanese_2.jpg";
 import { Button } from "@nextui-org/react";
 import React from "react";
 import useDownloader from "react-use-downloader";
@@ -18,9 +18,8 @@ export default function ResumeComp() {
     {
       language: t("language.Japanese"),
       images: [japaneseResume, japaneseResume2],
-      fileUrl: "",
-      filename: "履歴書",
-      open: "",
+      fileUrl: "/resumes/Japanese.pdf",
+      filename: "履歴書.pdf",
     },
     {
       language: t("language.English"),
@@ -50,9 +49,9 @@ export default function ResumeComp() {
               >
                 Download
               </Button>
-              <Button className="bg-accent ">
-                <Link href={resume.fileUrl}>Open</Link>
-              </Button>
+              <Link href={resume.fileUrl} target="_blank">
+                <Button className="bg-accent ">Open</Button>
+              </Link>
             </div>
 
             {resume.images.map((image, index) => (
