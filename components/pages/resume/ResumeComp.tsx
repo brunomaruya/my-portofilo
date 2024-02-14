@@ -2,8 +2,8 @@
 import { Tabs, Tab } from "@nextui-org/react";
 import Image from "next/image";
 import englishResume from "../../../public/resumes/EnglishResume.jpg";
-import japaneseResume from "../../../public/resumes/japanese_1.jpg";
-import japaneseResume2 from "../../../public/resumes/japanese_2.jpg";
+import japaneseResume from "../../../public/resumes/Japanese_1.jpg";
+import japaneseResume2 from "../../../public/resumes/Japanese_2.jpg";
 import { Button } from "@nextui-org/react";
 import React from "react";
 import useDownloader from "react-use-downloader";
@@ -13,7 +13,6 @@ import { useTranslations } from "next-intl";
 export default function ResumeComp() {
   const { download } = useDownloader();
   const t = useTranslations("Resume");
-  //TODO: update resumes
   const resumes = [
     {
       language: t("language.Japanese"),
