@@ -18,7 +18,7 @@ export default function ResumeComp() {
       language: t("language.Japanese"),
       images: [japaneseResume, japaneseResume2],
       fileUrl: "/resumes/Japanese.pdf",
-      filename: "履歴書.pdf",
+      filename: "マルヤ・ブルノ履歴書.pdf",
     },
     {
       language: t("language.English"),
