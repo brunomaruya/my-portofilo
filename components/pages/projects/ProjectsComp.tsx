@@ -42,7 +42,7 @@ export default function ProjectsComp() {
           <Link href={project.link} target="_blank">
             <Card
               key={index}
-              className="flex flex-col items-center justify-between  border border-primary w-96 bg-background rounded-md p-5 md:p-10"
+              className="flex flex-col items-center justify-between  border border-primary w-96 bg-background rounded-md p-5 md:p-10 h-[500px]"
             >
               <div>
                 <Image
